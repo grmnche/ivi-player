@@ -1,0 +1,89 @@
+{
+  "name": "cybervarius",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://grmnche.github.io/cybervarius",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "webpack"
+  ],
+  "author": "grmnche <grmnche@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "csv-loader": "^3.0.5",
+    "html-webpack-plugin": "^5.5.1",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "papaparse": "^5.4.1",
+    "postcss": "^8.4.25",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.1",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^1.3.4",
+    "gh-pages": "^5.0.0",
+    "jquery": "^3.7.0",
+    "normalize.css": "^8.0.1",
+    "postcss-loader": "^7.3.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "web-vitals": "^2.1.4"
+  }
+}
