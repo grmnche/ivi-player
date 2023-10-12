@@ -1,8 +1,8 @@
 {
-  "name": "cybervarius",
+  "name": "ivi-player",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://grmnche.github.io/cybervarius",
+  "homepage": "https://grmnche.github.io/ivi-player",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",

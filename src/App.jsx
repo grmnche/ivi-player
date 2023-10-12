@@ -1,39 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './pages/Home.jsx';
-import { LibAuthors } from './pages/LibAuthors.jsx';
-import { About } from './pages/About.jsx';
-import { BookAuthors } from './pages/BookAuthors.jsx';
-import { BookStoreChernyshev } from './pages/chernyshev/BookStoreChernyshev.jsx';
-import { LibChernyshev } from './pages/chernyshev/LibChernyshev.jsx';
-import { LibHolmov } from './pages/holmov/LibHolmov.jsx';
-import { BookStoreHolmov } from './pages/holmov/BookStoreHolmov.jsx';
-import Footer from './components/Footer.jsx';
-
+import React from 'react';
+import Buttons from './components/Buttons.jsx';
+import Resolutions from './components/Resolutions.jsx';
 
 function App() {
-  
-
   return (
-    <HashRouter>
-      <div className='App'>
-        <Routes>
-          <Route path={'/'} exact Component={Home} />
-          <Route path={'/libAuthors'} Component={LibAuthors} />
-          <Route path={'/booksAuthors'} Component={BookAuthors} />
-          <Route path={'/about'} Component={About} />
+    <div id="App">
+      {/* Для будущего header */}
+      <header></header>
 
-          <Route path={'/booksChernyshev'} exact Component={BookStoreChernyshev} />
-          <Route path={'/booksHolmov'} exact Component={BookStoreHolmov} />
+      <main>
+        <section>
+          <div className="player-outer">
+            <div className="player">
+              <p className="player-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis aut in autem veritatis ipsum rem eum quod velit,
+                debitis suscipit natus, fuga aliquam est quam! Quaerat similique
+                distinctio ipsum iusto?
+              </p>
+              <Resolutions />
+            </div>
 
-          <Route path={'/libChernyshev'} exact Component={LibChernyshev} />
-          <Route path={'/libHolmov'} exact Component={LibHolmov} />
-        </Routes>
+            <Buttons />
+          </div>
+        </section>
+      </main>
 
-      <Footer />
-
-      </div>
-    </HashRouter>
+      {/* Для будущего footer */}
+      <footer></footer>
+    </div>
   );
 }
 
